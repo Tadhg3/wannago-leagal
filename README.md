@@ -23,12 +23,25 @@ python -m http.server 8000
 
 ## GitHub Pages での公開手順
 
-1. GitHub でリポジトリ（例: `OurPins-legal`）を作成する。
+1. GitHub の `ourpins` org にリポジトリ `ourpins-legal` を用意する。
 2. このディレクトリを push する。
 3. リポジトリの **Settings → Pages** を開く。
 4. **Build and deployment → Source** を「Deploy from a branch」にする。
 5. Branch を `main`（フォルダは `/root`）に設定して保存する。
-6. 数分後、`https://<ユーザー名>.github.io/OurPins-legal/` で公開されます。
+6. 数分後、`https://ourpins.github.io/ourpins-legal/` で公開されます。
+
+## カスタムドメイン（legal.ourpins.app）
+
+本サイトは `CNAME` ファイルでカスタムドメイン `legal.ourpins.app` を指定しています。
+
+DNS 側（`ourpins.app` のレジストラの DNS 管理画面）で次の CNAME レコードを追加してください。
+
+| Type | Name | Value |
+| --- | --- | --- |
+| CNAME | `legal` | `ourpins.github.io` |
+
+DNS が反映されたら、**Settings → Pages → Enforce HTTPS** を必ずオンにします。
+公開 URL は `https://legal.ourpins.app/` になります。
 
 > `.nojekyll` ファイルを置いているため、Jekyll の処理をスキップしてファイルをそのまま配信します。
 

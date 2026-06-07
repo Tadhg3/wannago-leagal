@@ -1,6 +1,6 @@
-# WannaGo Legal
+# OurPins Legal
 
-共同マップアプリ **WannaGo** のプライバシーポリシーと利用規約を公開する静的サイトです。GitHub Pages でホスティングします。
+共同マップアプリ **OurPins** のプライバシーポリシーと利用規約を公開する静的サイトです。GitHub Pages でホスティングします。
 
 ## ページ
 
@@ -23,12 +23,12 @@ python -m http.server 8000
 
 ## GitHub Pages での公開手順
 
-1. GitHub でリポジトリ（例: `WannaGo-legal`）を作成する。
+1. GitHub でリポジトリ（例: `OurPins-legal`）を作成する。
 2. このディレクトリを push する。
 3. リポジトリの **Settings → Pages** を開く。
 4. **Build and deployment → Source** を「Deploy from a branch」にする。
 5. Branch を `main`（フォルダは `/root`）に設定して保存する。
-6. 数分後、`https://<ユーザー名>.github.io/WannaGo-legal/` で公開されます。
+6. 数分後、`https://<ユーザー名>.github.io/OurPins-legal/` で公開されます。
 
 > `.nojekyll` ファイルを置いているため、Jekyll の処理をスキップしてファイルをそのまま配信します。
 
